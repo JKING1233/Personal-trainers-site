@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +9,39 @@
       font-family: Arial, sans-serif;
       background: #f4f4f4;
       margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    main {
       padding: 20px;
     }
+
     .trainer-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      margin-bottom: 40px;
     }
+
     .trainer-card {
       background: #fff;
       border-radius: 8px;
@@ -24,35 +49,140 @@
       width: 200px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
-      cursor: pointer;
       text-decoration: none;
       color: inherit;
     }
+
     .trainer-card img {
       width: 100%;
       height: auto;
     }
+
     .trainer-card h3 {
       margin: 10px 0 5px;
     }
+
     .trainer-card p {
       margin: 0 0 10px;
       color: #555;
     }
+
+    .pricing {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .pricing h2 {
+      margin-top: 0;
+    }
+
+    .pricing-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1;
+      min-width: 200px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .price {
+      font-size: 1.5em;
+      color: #28a745;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
-  <h1>Meet Our Trainers from Marina One</h1>
-  <div class="trainer-grid">
-    <a href="trainer1.html" class="trainer-card">
-      <img src="trainer1.jpg" alt="Trainer 1">
-      <h3>Trainer 1</h3>
-      <p>Strength & Conditioning</p>
-    </a>
-    <a href="trainer2.html" class="trainer-card">
-      <img src="trainer2.jpg" alt="Trainer 2">
-      <h3>Trainer 1</h3>
-      <p>Strength & Conditioning</p>
-  </div>
+  <header>
+    <h1>Meet Our Trainers</h1>
+    <nav>
+      <a href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Trainers -->
+    <section class="trainer-grid">
+      <a href="trainer1.html" class="trainer-card">
+        <img src="trainer1.jpg" alt="Trainer 1">
+        <h3>John King</h3>
+        <p>Strength & Conditioning</p>
+      </a>
+      <a href="trainer2.html" class="trainer-card">
+        <img src="trainer2.jpg" alt="Trainer 2">
+        <h3>Jane Smith</h3>
+        <p>Cardio & HIIT</p>
+      </a>
+      <a href="trainer3.html" class="trainer-card">
+        <img src="trainer3.jpg" alt="Trainer 3">
+        <h3>Mike Lee</h3>
+        <p>Functional Training</p>
+      </a>
+      <a href="trainer4.html" class="trainer-card">
+        <img src="trainer4.jpg" alt="Trainer 4">
+        <h3>Sara Khan</h3>
+        <p>Yoga & Flexibility</p>
+      </a>
+      <a href="trainer5.html" class="trainer-card">
+        <img src="trainer5.jpg" alt="Trainer 5">
+        <h3>David Chen</h3>
+        <p>Weight Loss Coaching</p>
+      </a>
+      <a href="trainer6.html" class="trainer-card">
+        <img src="trainer6.jpg" alt="Trainer 6">
+        <h3>Lisa Wong</h3>
+        <p>Pilates & Core</p>
+      </a>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <h2>Personal Training Packages</h2>
+      <div class="pricing-cards">
+        <div class="card">
+          <h3>Starter Pack</h3>
+          <p class="price">$299</p>
+          <ul>
+            <li>4 Sessions</li>
+            <li>Free Consultation</li>
+            <li>Progress Tracking</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Transformation Pack</h3>
+          <p class="price">$699</p>
+          <ul>
+            <li>12 Sessions</li>
+            <li>Nutritional Guidance</li>
+            <li>Custom Workout Plan</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Ultimate Pack</h3>
+          <p class="price">$999</p>
+          <ul>
+            <li>20 Sessions</li>
+            <li>Personal Coach</li>
+            <li>Weekly Check-ins</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
